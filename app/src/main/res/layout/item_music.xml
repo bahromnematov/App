@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_margin="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imageMusic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_music_disk"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textMusicName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/card"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card"
+        app:layout_constraintBottom_toTopOf="@id/textArtistName"
+        tools:text="Sample music name"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/textArtistName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/card"
+        app:layout_constraintLeft_toRightOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/textMusicName"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        tools:text="Sample artist name"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.1dp"
+        app:layout_constraintLeft_toRightOf="@id/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Exam1</string>
+    <string name="login">login</string>
+    <string name="password" />
+    <string name="password1">password</string>
+    <string name="ajoyib_pitsa_gita">Ajoyib Pitsa GITA</string>
+    <string name="mazzasi">Mazzasi</string>
+    <string name="mashxurligi">Mashxurligi</string>
+    <string name="sotilishi">Sotilishi</string>
+    <string name="yangi">Yangi</string>
+    <string name="login1">Login:</string>
+    <string name="demo1">demo1</string>
+    <string name="foydalanuvchining_holati">Foydalanuvchining holati</string>
+    <string name="foydalanuvchining_holati1">foydalanuvchining_holati:</string>
+    <string name="foydalanuvchining_nomi">Foydalanuvchining nomi:</string>
+    <string name="_12345">12345</string>
+    <string name="demo3">demo3</string>
+    <string name="demo4">demo4</string>
+    <string name="login11">Login</string>
+    <string name="demo5">demo5</string>
+    <string name="demo6">demo6</string>
+    <string name="demo7">demo7</string>
+</resources>

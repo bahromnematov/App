@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF7F7"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24sp"
+            android:src="@drawable/gita"/>
+        <EditText
+           android:paddingStart="8dp"
+            android:id="@+id/text_login"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/login"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bb_edit"/>
+        <EditText
+            android:paddingStart="8dp"
+            android:id="@+id/text_password"
+            android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/password1"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bb_edit"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:paddingStart="8dp"
+            android:id="@+id/btn_login"
+            android:text="Login"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_button"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

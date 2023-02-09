@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.infinity.app.presentation.ui.screen.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_splashScreen_to_playListScreen"
+            app:destination="@id/playListScreen"
+            app:popUpTo="@id/splashScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/playListScreen"
+        android:name="uz.infinity.app.presentation.ui.screen.PlayListScreen"
+        android:label="PlayListScreen"
+        tools:layout="@layout/screen_play_list">
+        <action
+            android:id="@+id/action_playListScreen_to_listenScreen"
+            app:destination="@id/listenScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/listenScreen"
+        android:name="uz.infinity.app.presentation.ui.screen.PlayListScreen"
+        android:label="ListenScreen"
+        tools:layout="@layout/screen_play" />
+</navigation>
